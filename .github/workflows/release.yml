@@ -23,7 +23,7 @@ jobs:
           echo "version=v$VERSION" >> $GITHUB_OUTPUT
           # Determine if it's a pre-release (e.g., if version contains alpha, beta, rc)
           # For now, assuming it's not a pre-release based on the provided version format.
-          echo "is_prerelease=false" >> $GITHUB_OUTPUT
+          echo "is_prerelease=false" >> $GITHUB_OUTPUT 
 
   build-windows:
     needs: get-version
